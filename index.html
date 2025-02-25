@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laos Financial Holding Co.,Ltd</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; }
+        
+        /* 头部样式 */
+        .header {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('bg.jpg') center/cover;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+        
+        .logo { width: 80px; margin-bottom: 20px; }
+        .company-name { font-size: 36px; margin-bottom: 10px; }
+        .company-name-cn { font-size: 32px; margin-bottom: 30px; }
+        .brand { font-size: 64px; color: #FF8C00; }
+        .brand-line {
+            width: 100px;
+            height: 3px;
+            background-color: #FF8C00;
+            margin: 20px auto;
+        }
+        
+        /* 关于我们部分 */
+        .about { padding: 60px 20px; }
+        .about-title { 
+            text-align: left; 
+            margin-bottom: 40px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0 20px;
+        }
+        .about-title h2 { font-size: 36px; margin-bottom: 10px; }
+        .about-title h3 { font-size: 24px; color: #FF8C00; }
+        .about-text {
+            max-width: 1200px;
+            margin: 0 auto 60px;
+            line-height: 1.8;
+            text-align: justify;
+        }
+        
+        /* 特点部分 */
+        .features {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            padding: 0 20px;
+        }
+        
+        .feature {
+            flex: 1;
+            text-align: center;
+        }
+        
+        .feature img {
+            width: 80px;
+            margin-bottom: 20px;
+        }
+        
+        .feature-about {
+            color: #333;
+            font-size: 18px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+        
+        .feature h3 {
+            color: #FF8C00;
+            margin-bottom: 15px;
+            font-size: 20px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        .feature h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background-color: #FF8C00;
+        }
+        
+        .feature p {
+            line-height: 1.6;
+        }
+        
+        /* 联系我们部分 */
+        .contact {
+            background: #FF8C00;
+            color: white;
+            padding: 50px 20px;
+            text-align: left;
+            margin-top: 60px;
+        }
+        
+        .contact-container {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 100px;
+            padding: 0 20px;
+        }
+
+        .contact-info {
+            flex: 0 1 auto;
+        }
+        
+        .contact h2 { font-size: 36px; margin-bottom: 10px; }
+        .contact h3 { font-size: 24px; margin-bottom: 30px; }
+        .contact p { margin-bottom: 15px; }
+        .qr-code { 
+            width: 150px;
+            margin: 0;
+        }
+        .phone { font-size: 32px; margin: 20px 0; }
+        
+        @media (max-width: 768px) {
+            .contact-container {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+            .qr-code {
+                margin: 30px auto;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .features { flex-direction: column; }
+            .feature { margin-bottom: 40px; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="logo.jpg" alt="LFH Logo" class="logo">
+        <h1 class="company-name">Laos Financial Holding Co.,Ltd</h1>
+        <h2 class="company-name-cn">老挝金融控股有限公司</h2>
+        <div class="brand">LFH</div>
+        <div class="brand-line"></div>
+    </header>
+
+    <section class="about">
+        <div class="about-title">
+            <h2>ABOUT US</h2>
+            <h3>关于我们</h3>
+        </div>
+        <div class="about-text">
+            老挝金融控股有限公司根植于中国"一带一路"的发展号召，在老挝"和平、独立、友好、合作"的外交政策指引下，通过老挝外交组织引领政策在老挝进行业务布局，将负责此中国与老挝在金融方面人员并购整合，现在无力发挥自身在老挝方面的优势和特点，引进世界先先进的金融发展管理和管理者，设计带金融控股的清晰发展的创新商业产品，配方于为老挝经验先进的金融发展理论，从而促进老挝经济的整体发展提高。
+        </div>
+        
+        <div class="features">
+            <div class="feature">
+                <img src="aboutus.jpg" alt="专业的金融团队">
+                <div class="feature-about">ABOUT US</div>
+                <h3>专业的金融团队</h3>
+                <p>集团汇聚由一批经验丰富、业务精通、具有多年银行从业经验的人员组成，不仅具备深厚的金融服务经验，还拥有丰富的实战经验，致力于为客户提供全方位的金融服务。</p>
+            </div>
+            <div class="feature">
+                <img src="efficient.jpg" alt="高效的业务流程">
+                <div class="feature-about">ABOUT US</div>
+                <h3>高效的业务流程</h3>
+                <p>集团通过引入人工智能金融科技技术和管理理念，建立了一套完善的业务体系和完善的组织架构，能够高效完成各项业务流程。</p>
+            </div>
+            <div class="feature">
+                <img src="risk.jpg" alt="卓越的风控能力">
+                <div class="feature-about">ABOUT US</div>
+                <h3>卓越的风控能力</h3>
+                <p>集团在风控方面始终坚持"稳健经营、风险可控"的原则，通过建立完善的风险管理体系和风险控制机制，运用先进的数字化行（BOL）上报业务等，确保业务合规性，保证风险在可控范围内。</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="contact-container">
+            <img src="qr.jpg" alt="QR Code" class="qr-code">
+            <div class="contact-info">
+                <h2>CONTACT US</h2>
+                <h3>联系我们</h3>
+                <p>Contact Person: Mr. Wang</p>
+                <p>TEL: 020-26586666</p>
+                <p>Add.: Phonthon, Xaysettha District Vientiane Capital, Lao PDR</p>
+                <div class="phone">021 626666</div>
+                <p>公众号：老挝金融控股有限公司</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
